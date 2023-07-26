@@ -3,7 +3,8 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemo
 import random
 import datetime
 
-owner_id = 5395510109
+# owner_id = 5395510109
+owner_id = 1809626375
 # next_day = (datetime.now() + timedelta(days=1)).strftime('%d/%m/%Y')
 # extra_msg = "Please submit full information, note if you do not know your serial number or cert number leave blank."
 
