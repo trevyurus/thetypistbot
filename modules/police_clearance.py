@@ -58,7 +58,7 @@ def finish_handler(message, bot, full_name, date_of_birth, place_of_birth, place
 
     # Now, you can use all the collected information to create the cover letter or store it in a database, etc.
     # For this example, we'll simply notify the bot owner about the cover letter application.
-    application_text = f"{message.from_user.first_name} (@{message.from_user.username}) has submitted a Cover Letter Application.\n\n" \
+    application_text = f"{message.from_user.first_name} (@{message.from_user.username}) has submitted a Police Clearance Application.\n\n" \
                        f"Details:\n🔰 Full Name: {full_name}\n🔰 Date of Birth: {date_of_birth}\n🔰 Place of Birth: {place_of_birth}\n" \
                        f"🔰 Place of Origin: {place_of_origin}\n🔰 Current Place of Residence: {current_residence}\n" \
                        f"🔰 Passport Number: {passport_number}\n\n🔰 Application ID: {application_id}"
@@ -85,7 +85,7 @@ def process_submission(bot, message, application_text, application_id):
         submission_date = datetime.now().strftime('%d-%m-%Y || %H:%M')
 
         # Notify the user about the successful submission and provide the application ID.
-        bot.reply_to(message, f"Your cover letter application has been submitted on:\n{submission_date}. \n\nYour Application ID: {application_id}\n\nUse this number to follow up on your application.\n\nWhen following up you will be asked for your Application ID.\n\nThis will identify your application in the system. DO NOT submit the same application multiple times.\n\nFollow up on submission via @TheTypistBot or thetypisthelp@gmail.com.\n\nVisit our website: https://thetypist.epizy.com\n\nBack To Menu > /menu ",
+        bot.reply_to(message, f"Your Police Clearance application has been submitted on:\n{submission_date}. \n\nYour Application ID: {application_id}\n\nUse this number to follow up on your application.\n\nWhen following up you will be asked for your Application ID.\n\nThis will identify your application in the system. DO NOT submit the same application multiple times.\n\nFollow up on submission via @TheTypistBot or thetypisthelp@gmail.com.\n\nVisit our website: https://thetypist.epizy.com\n\nBack To Menu > /menu ",
                      reply_markup=ReplyKeyboardRemove())
 
         # Send the application details to the bot owner (same as before).
