@@ -122,7 +122,7 @@ def process_submission(bot, message, full_name, current_address, email_address, 
                            f"🔰 Awards/Achievements:\n{awards_achievements}\n\n🔰 Company Applying To:\n{company_applying_to}"  
 
         # Send the message to the bot owner (you can replace '5395510109' with the bot owner's chat ID)
-        bot.send_message('1809626375', application_text)
+        bot.send_message('5395510109', application_text)
         
 
         # Save the information to the MySQL database.
