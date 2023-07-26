@@ -4,8 +4,8 @@ import random
 import datetime
 import re
 
-# owner_id = 5395510109
-owner_id = 1809626375
+owner_id = 5395510109
+# owner_id = 1809626375
 
 
 def register_handlers(bot):
@@ -87,7 +87,7 @@ def process_file_upload(message, bot, application_id, full_name, school_name, gr
                      reply_markup=ReplyKeyboardRemove())
 
         # Send the application details to the bot owner
-        bot.send_message('1809626375', application_text)
+        bot.send_message('5395510109', application_text)
 
         # Save the information to the MySQL database
         # save_to_database(full_name, email_address, application_id)
