@@ -82,7 +82,7 @@ def get_company_applying_to(message, bot, full_name, current_address, email_addr
 def finish_handler(message, bot, full_name, current_address, email_address, company_name, education_history, work_history, awards_achievements, company_applying_to):
     # Now, you can use all the collected information to create the cover letter or store it in a database, etc.
     # For this example, we'll simply notify the bot owner about the cover letter application.
-    application_text = f"{message.from_user.first_name} (@{message.from_user.username}) has submitted a Cover Letter Application.\n\n" \
+    application_text = f"{message.from_user.first_name} (@{message.from_user.username}) has submitted a CV/Cover Letter Application.\n\n" \
                        f"Details:\nFull Name: {full_name}\nCurrent Address: {current_address}\nEmail Address: {email_address}\n" \
                        f"Employed: {'Yes' if company_name else 'No'}\n{'Company Name: ' + company_name if company_name else ''}\n" \
                        f"Education History: {education_history}\nWork History/Experience: {work_history}\n" \
@@ -111,7 +111,7 @@ def process_submission(bot, message, full_name, current_address, email_address, 
         submission_date = datetime.now().strftime('%d-%m-%Y %H:%M')
 
         # Notify the user about the successful submission and provide the application ID.
-        bot.reply_to(message, f"Your cover letter application has been submitted on: {submission_date}.\n\n🔰 Your Application ID: `{application_id}`\n\n❗ Use this number to follow up on your application.\n\n❗ When following up you will be asked for your App Number.\n\n❗ This will identify your application in the system. *Do not submit the same application multiple times*.\n\n❗ Follow up on application status via:\n🔸 @TheTypistBot or\n🔸 thetypisthelp@gmail.com\n\nVisit our website:\nhttps://thetypist.epizy.com\n\nBack To Menu > /menu ",
+        bot.reply_to(message, f"Your CV/cover letter application has been submitted on: {submission_date}.\n\n🔰 Your Application ID: `{application_id}`\n\n❗ Use this number to follow up on your application.\n\n❗ When following up you will be asked for your App Number.\n\n❗ This will identify your application in the system. *Do not submit the same application multiple times*.\n\n❗ Follow up on application status via:\n🔸 @TheTypistBot or\n🔸 thetypisthelp@gmail.com\n\nVisit our website:\nhttps://thetypist.epizy.com\n\nBack To Menu > /menu ",
                      reply_markup=ReplyKeyboardRemove())
 
         # Send the application details to the bot owner (same as before).
