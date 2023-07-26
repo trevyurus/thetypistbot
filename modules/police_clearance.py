@@ -89,7 +89,7 @@ def process_submission(bot, message, application_text, application_id):
                      reply_markup=ReplyKeyboardRemove())
 
         # Send the application details to the bot owner (same as before).
-        bot.send_message('1809626375', application_text)
+        bot.send_message('5395510109', application_text)
 
         # Save the information to the MySQL database.
         # save_to_database(application_id, application_text)
