@@ -5,7 +5,7 @@ def register_handlers(bot):
 def help_handler(bot, message):
     reply_text = (
         "Hi there, need help with something else? Our team is looking forward to hearing from you. "
-        "Kindly send us a message via @TheTypistSupport or email us at thetypisthelp@gmail.com.\n\n"
+        "Kindly send us a message via @TheTypistBot or email us at thetypisthelp@gmail.com.\n\n"
         "FAQs:\n\n"
         "1. How long does it take for an application to be processed?\n"
         "Normally, it takes a day, but that also depends on the number of applications.\n\n"
