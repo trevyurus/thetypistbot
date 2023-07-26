@@ -38,8 +38,8 @@ def get_grade_level(message, bot, full_name, school_name):
 
 def get_year_graduated(message, bot, full_name, school_name, grade_level):
     year_graduated = message.text
-    bot.reply_to(message, "📚 Enter Subjects Taken and Grades (Separate each subject and grade by a comma):\n"
-                          "Example: Math - A, Science - B")
+    bot.reply_to(message, "📚 Enter Subjects Taken and Grades. Include Changes as well\n\n (Separate each subject and grade by a comma):\n"
+                          "Example: Math C Change to B, L&L B Change To A, And so on...")
     bot.register_next_step_handler(message, get_subjects_and_grades, bot, full_name, school_name, grade_level, year_graduated)
 
 def get_subjects_and_grades(message, bot, full_name, school_name, grade_level, year_graduated):
