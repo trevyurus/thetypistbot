@@ -5,7 +5,7 @@ def menu_handler(bot, message):
     # create menu keyboard
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
     button1 = KeyboardButton('Police Clearance K10')
-    button2 = KeyboardButton('School Cert. - K25')
+    button2 = KeyboardButton('School Cert - K25')
     button3 = KeyboardButton('CV & Cover Letter - K10')
     button4 = KeyboardButton('Transcripts - K25')
     button5 = KeyboardButton('Have another question?')
