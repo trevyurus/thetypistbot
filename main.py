@@ -2,7 +2,7 @@ import telebot
 from modules import menu
 
 # replace <YOUR_BOT_TOKEN> with your actual bot token obtained from BotFather
-bot = telebot.TeleBot('6216214795:AAGX5Gy0zbrGw53-xzGoGcO1l2tvCIBIpfU')
+bot = telebot.TeleBot('5813832347:AAHp2cFngU_BUnbCATBRmI4MMIyM-8pmRMQ')
 
 @bot.message_handler(commands=['start'])
 def send_greeting(message):
