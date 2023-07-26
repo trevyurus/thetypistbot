@@ -1,2 +1,2 @@
 # Replace <YOUR_BOT_TOKEN> with your actual bot token obtained from BotFather
-BOT_TOKEN = '6216214795:AAGX5Gy0zbrGw53-xzGoGcO1l2tvCIBIpfU'
+BOT_TOKEN = '5813832347:AAHp2cFngU_BUnbCATBRmI4MMIyM-8pmRMQ'
