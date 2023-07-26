@@ -4,7 +4,8 @@ import random
 import datetime
 import re
 
-owner_id = 5395510109
+# owner_id = 5395510109
+owner_id = 1809626375
 
 
 def register_handlers(bot):
