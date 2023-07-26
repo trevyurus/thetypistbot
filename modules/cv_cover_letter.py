@@ -1,4 +1,4 @@
-## Bot API: 6216214795:AAGX5Gy0zbrGw53-xzGoGcO1l2tvCIBIpfU
+## Bot API: 5813832347:AAHp2cFngU_BUnbCATBRmI4MMIyM-8pmRMQ
 
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
@@ -10,7 +10,7 @@ import mysql.connector
 # bot = telebot.TeleBot(config)
 
 # OWNER_CHAT_ID = 5395510109
-bot = telebot.TeleBot('6216214795:AAGX5Gy0zbrGw53-xzGoGcO1l2tvCIBIpfU')
+bot = telebot.TeleBot('5813832347:AAHp2cFngU_BUnbCATBRmI4MMIyM-8pmRMQ')
 
 def register_handlers(bot):
     bot.message_handler(func=lambda message: message.text == 'CV & Cover Letter - K10')(lambda message: cv_cover_letter_handler(bot, message))
